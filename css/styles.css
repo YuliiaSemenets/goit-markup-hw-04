@@ -38,7 +38,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 94px;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -102,6 +102,16 @@ body {
 .link:hover,
 .link:focus {
   color: var(--link-color);
+}
+
+.icon-envelope,
+.icon-phone {
+  fill: #757575;
+}
+
+.icon-envelope:hover,
+.icon-phone:hover {
+  fill: var(--link-color);
 }
 
 /* Основные стили страницы */
@@ -223,6 +233,14 @@ p {
 .portfolio .item {
   width: 370px;
   margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.item.first {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .item:not(:nth-child(3n)) {
@@ -383,7 +401,7 @@ p {
   background-color: var(--footer-color);
 }
 
-.finish.main {
+.conteiner.finish {
   margin-top: 103px;
 }
 
@@ -396,11 +414,15 @@ p {
   justify-content: space-between;
 }
 
-.list.adress {
+.adress-block {
+  margin-right: 69px;
+  width: 231px;
+  height: 81px;
 }
 
 .adress-title {
   margin-top: 8px;
+
   color: var(--footer-adress-color);
   font-size: 14px;
   line-height: 1.71;
@@ -414,7 +436,8 @@ p {
   font-style: normal;
 }
 
-.lets-go {
+.footer-list .paragraph,
+.lets-go .paragraph {
   color: var(--footer-adress-color);
   font-weight: 700;
   font-size: 14px;
@@ -422,17 +445,15 @@ p {
   text-transform: uppercase;
 }
 
-/* .list {
+.footer-list,
+.lets-go {
   margin-top: 57px;
-} */
-
-.list .item {
-  display: inline-flex;
-  margin-top: 32px;
 }
 
-.list .item + .item {
-  margin-left: 22px;
+.footer-contact {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
 }
 
 /* Автор и год */
@@ -483,21 +504,10 @@ p {
   margin-left: 10px;
 }
 
-/* 
-.icon {
-  padding: 0px;
-  border: none;
-  color: #afb1b8;
-  border-radius: 50%;
-  background-color: var(--link-color);
-  width: 44px;
-  height: 44px;
-} */
-
 .icon-instagram,
 .icon-twitter,
 .icon-facebook,
 .icon-linkedin {
-  max-width: 20px;
-  max-height: 20px;
+  width: 20px;
+  height: 20px;
 }
