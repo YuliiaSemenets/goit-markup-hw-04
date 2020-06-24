@@ -332,16 +332,6 @@ p {
   margin-top: 10px;
 }
 
-/* 
-.team-contact a {
-  display: inline-block;
-  margin-top: 16px;
-} */
-/* 
-.team-contact > .icon + .icon {
-  margin-left: 10px;
-} */
-
 /* Особенности */
 
 .features {
@@ -384,15 +374,23 @@ p {
 
 .clients {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+
+.clients .item {
+  margin-top: 50px;
+  width: 170px;
+  height: 90px;
+  padding-top: 20px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-size: contain;
 }
 
 .clients .item + .item {
   margin-left: 30px;
-}
-
-.logo {
-  margin-top: 50px;
 }
 
 /*Адресс и контакты */
