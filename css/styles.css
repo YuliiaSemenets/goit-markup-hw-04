@@ -106,12 +106,12 @@ body {
 
 .icon-envelope,
 .icon-phone {
-  fill: #757575;
+  fill: currentColor;
 }
 
 .icon-envelope:hover,
 .icon-phone:hover {
-  fill: var(--link-color);
+  fill: currentColor;
 }
 
 /* Основные стили страницы */
@@ -238,7 +238,7 @@ p {
   box-sizing: border-box;
 }
 
-.item.first {
+.portfolio .item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -374,7 +374,6 @@ p {
 
 .clients {
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .clients .item {
@@ -391,6 +390,28 @@ p {
 
 .clients .item + .item {
   margin-left: 30px;
+}
+
+.clients .item:hover {
+  border: 1px solid var(--link-color);
+}
+
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6 {
+  fill: #afb1b8;
+}
+
+.logo1:hover,
+.logo2:hover,
+.logo3:hover,
+.logo4:hover,
+.logo5:hover,
+.logo6:hover {
+  fill: var(--link-color);
 }
 
 /*Адресс и контакты */
@@ -454,15 +475,6 @@ p {
   justify-content: space-between;
 }
 
-.footer-contact .item {
-  width: 44px;
-  height: 44px;
-
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  background-position: 50% 50%;
-}
-
 .footer-contact .item + .item {
   margin-left: 10px;
 }
@@ -515,6 +527,34 @@ p {
   margin-left: 10px;
 }
 
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+.social-link .icon-instagram,
+.social-link .icon-twitter,
+.social-link .icon-facebook,
+.social-link .icon-linkedin {
+  color: #afb1b8;
+}
+
+.social-link:hover {
+  background-color: var(--link-color);
+}
+
+.social-link .icon-instagram:hover,
+.social-link .icon-twitter:hover,
+.social-link .icon-facebook:hover,
+.social-link .icon-linkedin:hover {
+  fill: var(--footer-adress-color);
+}
+
 .icon-instagram,
 .icon-twitter,
 .icon-facebook,
@@ -522,6 +562,20 @@ p {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.footer-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon:hover {
+  background-color: var(--link-color);
 }
 
 .footer-list .icon-instagram,
